@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Consumption Analysis System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid #263548;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            color: #64e5a5;
+        }
+
+        nav a {
+            color: #d5deea;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            min-height: 78vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 70px 8%;
+        }
+
+        .content {
+            max-width: 650px;
+        }
+
+        .tag {
+            display: inline-block;
+            color: #64e5a5;
+            border: 1px solid #285b4b;
+            background: #102c28;
+            padding: 10px 15px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 65px);
+            line-height: 1.12;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #64e5a5;
+        }
+
+        .description {
+            color: #aab8ca;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .start-btn {
+            display: inline-block;
+            background: #64e5a5;
+            color: #07111f;
+            padding: 16px 25px;
+            border-radius: 9px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .start-btn:hover {
+            background: #8af3bd;
+            transform: translateY(-2px);
+        }
+
+        .visual {
+            width: 330px;
+            min-width: 260px;
+            padding: 30px;
+            background: linear-gradient(145deg, #14283a, #0b1928);
+            border: 1px solid #2c4354;
+            border-radius: 24px;
+            text-align: center;
+        }
+
+        .fuel-icon {
+            font-size: 90px;
+            margin: 15px 0 25px;
+        }
+
+        .visual h2 {
+            color: #64e5a5;
+            margin-bottom: 12px;
+        }
+
+        .visual p {
+            color: #aab8ca;
+            line-height: 1.7;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 0 8% 60px;
+        }
+
+        .feature {
+            padding: 23px;
+            background: #101e2d;
+            border: 1px solid #263548;
+            border-radius: 14px;
+        }
+
+        .feature h3 {
+            margin: 12px 0;
+        }
+
+        .feature p {
+            color: #aab8ca;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8494a8;
+            border-top: 1px solid #263548;
+        }
+
+        @media (max-width: 750px) {
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .visual {
+                width: 100%;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                padding: 20px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">⛽ Fuel Analytics</div>
+        <a href="/">Home</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="content">
+                <div class="tag">SMART VEHICLE ANALYTICS</div>
+
+                <h1>
+                    Fuel Consumption<br>
+                    <span>Analysis System</span>
+                </h1>
+
+                <p class="description">
+                    Monitor fuel usage, analyze vehicle mileage, track expenses,
+                    and make smarter decisions with a simple fuel analysis system.
+                </p>
+
+                <a class="start-btn" href="/dashboard">
+                    Start Analysis &nbsp; →
+                </a>
+            </div>
+
+            <div class="visual">
+                <div class="fuel-icon">⛽</div>
+                <h2>Drive Smarter</h2>
+                <p>
+                    Track every litre. Understand every journey.
+                    Manage your fuel expenses efficiently.
+                </p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <div>📊</div>
+                <h3>Fuel Analysis</h3>
+                <p>Understand your fuel consumption and usage patterns.</p>
+            </div>
+
+            <div class="feature">
+                <div>🚘</div>
+                <h3>Mileage Tracking</h3>
+                <p>Keep track of vehicle distance and fuel efficiency.</p>
+            </div>
+
+            <div class="feature">
+                <div>💰</div>
+                <h3>Expense Management</h3>
+                <p>Review fuel costs and manage your spending.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Fuel Consumption Analysis System · Smart Tracking, Better Driving
+    </footer>
+</body>
+</html>
